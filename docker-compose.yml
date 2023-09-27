@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER:postgres
+      - POSTGRES_PASSWORD:123
+      - POSTGRES_DB=Estudos
+      - POSTGRES_HOST_AUTH_METHOD=trust
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      - RABBITMQ_DEFAULT_USER=rabbitmq
+      - RABBITMQ_DEFAULT_PASS=rabbitmq
+
+

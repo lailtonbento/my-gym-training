@@ -1,0 +1,19 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Estudos
+    username: postgres
+    password: 123
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: rabbitmq
+    password: rabbitmq
+#api:
+#  security:
+#    token:
+#      SECRET_KEY=$(JWT_SECRET:my-secret-key);

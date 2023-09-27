@@ -1,0 +1,13 @@
+*app fitness*
+
+features:
+monte seu proprio treino: colocar exercicios, repeticoes, ultima carga de peso trabalhada, metodos (biset/triset/rest-pause)
+
+models:
+usuario/pessoa (user/person)
+treino (workout)
+exercicios (exercise)
+
+regra de negocio:
+
+Uma pessoa pode ter uma lista de treino (dividido por agrupamentos musculares a, b, c, d, etc..), o treino é composto por uma lista de exercicios, cada exercicio tem um nome, repetiçoes e a quantidade de series e se tem algum metodo (biset/triset/rest-pause) nesse exercicio
